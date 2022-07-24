@@ -1,0 +1,32 @@
+{
+  "name": "varcado-bot",
+  "version": "1.0.0",
+  "description": "A simple raid detection bot. Will attempt to detect rapid joins of accounts with similar names, preventing the most basic of raid attacks.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iPlayerUno/Varcado-Bot.git"
+  },
+  "keywords": [
+    "raid",
+    "anti",
+    "bot",
+    "discord",
+    "open-source",
+    "custom"
+  ],
+  "author": "iPlayerUno and Aveiro746",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/iPlayerUno/Varcado-Bot/issues"
+  },
+  "homepage": "https://github.com/iPlayerUno/Varcado-Bot#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "discord.js": "^14.0.3",
+    "moment": "^2.29.4"
+  }
+}

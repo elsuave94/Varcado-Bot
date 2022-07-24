@@ -1,0 +1,9 @@
+{
+    "botToken": "",
+
+    "threshold": 5,
+    "minutesTillClear": 60,
+    
+    "alertChannelID": "",
+    "statisticsChannelID": ""
+}
