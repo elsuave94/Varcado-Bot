@@ -1,6 +1,7 @@
 const {Client, GatewayIntentBits} = require(`discord.js`)
 const client = new Client({intents: [GatewayIntentBits.GuildMembers]})
 const path = require(`node:path`)
+const fs = require(`fs`)
 
 const {botToken} = require(`./botSettings/manualSettings.json`)
 

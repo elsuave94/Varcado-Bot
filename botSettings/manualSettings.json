@@ -5,5 +5,7 @@
     "minutesTillClear": 60,
     
     "alertChannelID": "",
-    "statisticsChannelID": ""
+    "statisticsChannelID": "",
+
+    "mongoURL": ""
 }
