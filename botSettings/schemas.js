@@ -1,6 +1,13 @@
 const mongoose = require(`mongoose`)
-
+mongoose.pluralize(null)
 const usernamesSchema = new mongoose.Schema({
+    username: String,
+    count: Number,
+    ids: Array,
+    lastSeen: String
+})
+
+const detectedUsernamesSchema = new mongoose.Schema({
     username: String,
     count: Number,
     ids: Array,
@@ -12,7 +19,7 @@ const bannedUsersSchema = new mongoose.Schema({
     username: String,
     tag: String,
     reason: String,
-    date: String
+    lastSeen: String
 })
 
 const blacklistedUsernamesSchema = new mongoose.Schema({
@@ -23,5 +30,6 @@ const blacklistedUsernamesSchema = new mongoose.Schema({
 
 
 exports.usernames = mongoose.model(`Usernames`, usernamesSchema)
+exports.detectedUsernames = mongoose.model(`Detected Usernames`, detectedUsernamesSchema)
 exports.bannedUsers = mongoose.model(`Banned Users`, bannedUsersSchema)
 exports.blacklistedUsernames = mongoose.model(`Blacklist`, blacklistedUsernamesSchema)
